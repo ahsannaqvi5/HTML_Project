@@ -1,0 +1,22 @@
+body{
+    background-color: lightblue;
+}
+table{
+    color: red;
+}
+body{
+    color: yellow;
+}
+form{
+    color: blue;
+
+}
+input[type="submit"]:hover {
+    background-color: yellow;
+}
+h1 {
+    border-style: groove;
+}
+h2 { background-color: black;
+    border-style: groove;
+}
