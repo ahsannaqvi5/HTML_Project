@@ -5,7 +5,7 @@ table{
     color: red;
 }
 body{
-    color: yellow;
+    color: black;
 }
 form{
     color: blue;
@@ -19,4 +19,20 @@ h1 {
 }
 h2 { background-color: black;
     border-style: groove;
+}
+h3 {
+    border: 2px dashed red;
+    outline-style: dashed;
+
+}
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+table, th, td {
+    border: 2px solid;
+    width: 20%;
+    border-collapse: collapse;
+}
+tr:hover {
+    background-color: yellow;
 }
