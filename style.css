@@ -69,3 +69,6 @@ tr:hover {
 .dropdown:hover .dropdownbutton{
     background-color: grey;
 }
+div[class] {
+    color:yellow;
+}
