@@ -10,15 +10,11 @@ const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 const button3 = document.getElementById("button3");
 const text = document.getElementById("text");
-const locations = [
-    {
-name: "town square",
-"button text": ["Go to Store", "Go to Cave", "Fight Dragon"]
-}
-]
 
-// initialize buttons
-goTown();
+// initialize buttons with functions
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
 
 function goTown() {
     button1.innerText = "Go to store";

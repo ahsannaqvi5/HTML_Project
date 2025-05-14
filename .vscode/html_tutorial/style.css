@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #131713;
+    font-family: sans-serif;
+}
+h3 {
+    color: white;
+}
+.topnav {
+    background-color: #131720;
+    padding: 10px;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
