@@ -1,29 +1,106 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Movies Site</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="topnav">
-            <a class="active" href="#">Movies Site</a>
-            <div class="search-container">
-                <form role="search" id="form">
-                 <input type="search" id="query" name="q" placeholder="search..">
-                </form> 
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies Site</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #131713;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .topnav {
+            background-color: #131720;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #151f30;
+            color: white;
+            border-radius: 19px;
+            padding: 15px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .thumbnail {
+            height: 350px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        h3 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="#">Movies Site</a>
+    </div>
+
+    <section class="row">
+        <!-- Repeat this card as many times as needed -->
+        <div class="card">
+           <img src="movie.jpg" alt="Movie" class="thumbnail">
+
+            <h3>Monster House</h3>
         </div>
-         <div style="padding-left: 16px;"></div>
-        <section id="section">
-     <!--       <div class="row">
-            <div class="column">
-                <div class="card">
-                     <center><img src="movie.jpg" class="thumbnail"></center>
-                     <h3>Movie Title</h3>
-                </div>
-            </div>
-        </div> -->
-        </section>
-    </body>
-    <script src="script.js"></script>
+
+        <div class="card">
+           <img src="movie.jpg" alt="Movie" class="thumbnail">
+
+            <h3>Monster House</h3>
+        </div>
+
+        <div class="card">
+            <img src="movie.jpg" alt="Movie" class="thumbnail">
+
+            <h3>Monster House</h3>
+        </div>
+
+        <div class="card">
+            <img src="movie.jpg" alt="Movie" class="thumbnail">
+
+            <h3>Monster House</h3>
+        </div>
+         <div class="card">
+            <img src="movie.jpg" alt="Movie" class="thumbnail">
+
+            <h3>Monster House</h3>
+        </div>
+ <div class="card">
+            <img src="movie.jpg" alt="Movie" class="thumbnail">
+
+            <h3>Monster House</h3>
+        </div>
+
+
+        <!-- Add more cards below as needed -->
+    </section>
+
+</body>
 </html>

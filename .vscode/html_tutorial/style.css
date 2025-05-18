@@ -1,31 +1,39 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 body {
     background-color: #131713;
     font-family: sans-serif;
 }
+
 h3 {
     color: white;
+    margin-top: 10px;
 }
+
 .topnav {
     background-color: #131720;
     padding: 10px;
+    overflow: hidden;
 }
-.topnav a{
+
+.topnav a {
     float: left;
-    display: block;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
 }
-.topnav .search-container{
+
+.topnav .search-container {
     float: right;
 }
-form{
+
+form {
     background-color: #151f30;
     width: 300px;
     height: 43px;
@@ -33,6 +41,7 @@ form{
     display: flex;
     align-items: center;
 }
+
 input {
     all: unset;
     font: 15px system-ui;
@@ -41,20 +50,31 @@ input {
     width: 100%;
     padding: 6px 9px;
 }
-.thumbnail {
-    height: 350px;
-    width: 300px;
-    border-radius: 19px;
-}
-.column {
-    float: left;
-    width: 35%;
-    padding: 10px 15px;
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
+
+.column {
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
 .card {
     border-radius: 19px;
     padding: 15px;
     text-align: center;
     background-color: #151f30;
+    color: white;
+}
+
+.thumbnail {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
